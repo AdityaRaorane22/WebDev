@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #2ECC71;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar a:hover {
+    background-color: #BDF74B;
+    border-radius: 5px;
+}
+
+.selling-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.selling-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2ECC71;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #27AE60;
+}
