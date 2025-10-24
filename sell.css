@@ -4,14 +4,32 @@
     padding: 0;
 }
 
-body {
+:root{
+    --bg: #ffffff;
+    --text: #333333;
+    --primary: #4CAF50;
+    --header-bg: var(--primary);
+    --card-bg: #ffffff;
+    --muted: #777777;
+}
+
+body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: white;
-    color: #333;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+body.dark{
+    --bg: #121212;
+    --text: #e6e6e6;
+    --primary: #2ECC71;
+    --header-bg: #0f4d35;
+    --card-bg: #1b1b1b;
+    --muted: #bdbdbd;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: var(--header-bg);
     color: white;
     padding: 20px;
     display: flex;
@@ -38,6 +56,22 @@ header .navbar a {
 
 header .navbar a:hover {
     background-color: #45a049;
+}
+
+/* Theme toggle button in header */
+#themeToggle{
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+body.dark #themeToggle{
+    border-color: rgba(255,255,255,0.25);
 }
 
 main {
